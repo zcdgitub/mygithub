@@ -1,0 +1,1413 @@
+[ 2018-04-18T08:23:45+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.340019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.340019s ]
+SQL: SHOW COLUMNS FROM `lt_ppt` [ RunTime:1.4961s ]
+SQL: SELECT * FROM `lt_ppt` WHERE `pp_view` = 1 ORDER BY pp_time desc LIMIT 3   [ RunTime:0.1260s ]
+SQL: SHOW COLUMNS FROM `lt_article` [ RunTime:0.5470s ]
+SQL: SELECT * FROM lt_article a left join lt_tag t on a.tag_id=t.t_id  WHERE ( a_view>0 ) ORDER BY a_time desc  [ RunTime:0.3630s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.089005s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.089005s ]
+NOTIC: [8] Undefined variable: index D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 42 行.
+NOTIC: [8] Undefined variable: about D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 43 行.
+NOTIC: [8] Undefined variable: class D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 44 行.
+NOTIC: [8] Undefined variable: tag D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 47 行.
+NOTIC: [8] Undefined variable: feel D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 52 行.
+NOTIC: [8] Undefined variable: album D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 53 行.
+NOTIC: [8] Undefined variable: friends D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 54 行.
+NOTIC: [8] Undefined variable: gust D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 55 行.
+NOTIC: [8] Undefined variable: download D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 56 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 81 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 88 行.
+NOTIC: [8] Undefined variable: tmp D:\phpStudy\WWW\Blog\Application\Common\Common\function.php 第 307 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 81 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 88 行.
+NOTIC: [8] Undefined variable: tmp D:\phpStudy\WWW\Blog\Application\Common\Common\function.php 第 307 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 81 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 88 行.
+NOTIC: [8] Undefined variable: tmp D:\phpStudy\WWW\Blog\Application\Common\Common\function.php 第 307 行.
+NOTIC: [8] Undefined variable: version D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 114 行.
+NOTIC: [8] Undefined variable: tag D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 124 行.
+NOTIC: [8] Undefined variable: s_article D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 135 行.
+NOTIC: [8] Undefined variable: s_content D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 154 行.
+NOTIC: [8] Undefined variable: gusts D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 188 行.
+NOTIC: [8] Undefined variable: hits D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 202 行.
+NOTIC: [8] Undefined variable: link D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 210 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 223 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 225 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 229 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 231 行.
+NOTIC: [8] Undefined variable: system D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 235 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 237 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 241 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 243 行.
+NOTIC: [8] Undefined variable: system D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 247 行.
+NOTIC: [8] Undefined variable: version D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 262 行.
+NOTIC: [8] Undefined variable: f_article D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 283 行.
+NOTIC: [8] Undefined variable: foot_album D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 288 行.
+NOTIC: [8] Undefined variable: system D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 296 行.
+NOTIC: [8] Undefined variable: system D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 299 行.
+NOTIC: [8] Undefined variable: system D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 299 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:1.906109s ]
+INFO: [ view_parse ] --END-- [ RunTime:1.907109s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.059003s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.059003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005001s ]
+
+[ 2018-04-18T08:23:45+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.316018s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.340019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.340019s ]
+SQL: SHOW COLUMNS FROM `lt_ppt` [ RunTime:1.4961s ]
+SQL: SELECT * FROM `lt_ppt` WHERE `pp_view` = 1 ORDER BY pp_time desc LIMIT 3   [ RunTime:0.1260s ]
+SQL: SHOW COLUMNS FROM `lt_article` [ RunTime:0.5470s ]
+SQL: SELECT * FROM lt_article a left join lt_tag t on a.tag_id=t.t_id  WHERE ( a_view>0 ) ORDER BY a_time desc  [ RunTime:0.3640s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.088005s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.088005s ]
+NOTIC: [8] Undefined variable: index D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 42 行.
+NOTIC: [8] Undefined variable: about D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 43 行.
+NOTIC: [8] Undefined variable: class D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 44 行.
+NOTIC: [8] Undefined variable: tag D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 47 行.
+NOTIC: [8] Undefined variable: feel D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 52 行.
+NOTIC: [8] Undefined variable: album D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 53 行.
+NOTIC: [8] Undefined variable: friends D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 54 行.
+NOTIC: [8] Undefined variable: gust D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 55 行.
+NOTIC: [8] Undefined variable: download D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 56 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 81 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 88 行.
+NOTIC: [8] Undefined variable: tmp D:\phpStudy\WWW\Blog\Application\Common\Common\function.php 第 307 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 81 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 88 行.
+NOTIC: [8] Undefined variable: tmp D:\phpStudy\WWW\Blog\Application\Common\Common\function.php 第 307 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 81 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 88 行.
+NOTIC: [8] Undefined variable: tmp D:\phpStudy\WWW\Blog\Application\Common\Common\function.php 第 307 行.
+NOTIC: [8] Undefined variable: version D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 114 行.
+NOTIC: [8] Undefined variable: tag D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 124 行.
+NOTIC: [8] Undefined variable: s_article D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 135 行.
+NOTIC: [8] Undefined variable: s_content D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 154 行.
+NOTIC: [8] Undefined variable: gusts D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 188 行.
+NOTIC: [8] Undefined variable: hits D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 202 行.
+NOTIC: [8] Undefined variable: link D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 210 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 223 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 225 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 229 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 231 行.
+NOTIC: [8] Undefined variable: system D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 235 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 237 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 241 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 243 行.
+NOTIC: [8] Undefined variable: system D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 247 行.
+NOTIC: [8] Undefined variable: version D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 262 行.
+NOTIC: [8] Undefined variable: f_article D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 283 行.
+NOTIC: [8] Undefined variable: foot_album D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 288 行.
+NOTIC: [8] Undefined variable: system D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 296 行.
+NOTIC: [8] Undefined variable: system D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 299 行.
+NOTIC: [8] Undefined variable: system D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 299 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:1.906109s ]
+INFO: [ view_parse ] --END-- [ RunTime:1.906109s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.059003s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.059003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008001s ]
+
+[ 2018-04-18T08:24:42+08:00 ] 127.0.0.1 /home/public/nav
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] preg_match(): No ending delimiter '/' found D:\phpStudy\WWW\Blog\ThinkPHP\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `lt_tag` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `lt_tag`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: index D:\phpStudy\WWW\Blog\Runtime\Cache\Home\dc5869df7c59d18391d1eab9b4ba56fc.php 第 37 行.
+NOTIC: [8] Undefined variable: about D:\phpStudy\WWW\Blog\Runtime\Cache\Home\dc5869df7c59d18391d1eab9b4ba56fc.php 第 38 行.
+NOTIC: [8] Undefined variable: class D:\phpStudy\WWW\Blog\Runtime\Cache\Home\dc5869df7c59d18391d1eab9b4ba56fc.php 第 39 行.
+NOTIC: [8] Undefined variable: feel D:\phpStudy\WWW\Blog\Runtime\Cache\Home\dc5869df7c59d18391d1eab9b4ba56fc.php 第 47 行.
+NOTIC: [8] Undefined variable: album D:\phpStudy\WWW\Blog\Runtime\Cache\Home\dc5869df7c59d18391d1eab9b4ba56fc.php 第 48 行.
+NOTIC: [8] Undefined variable: friends D:\phpStudy\WWW\Blog\Runtime\Cache\Home\dc5869df7c59d18391d1eab9b4ba56fc.php 第 49 行.
+NOTIC: [8] Undefined variable: gust D:\phpStudy\WWW\Blog\Runtime\Cache\Home\dc5869df7c59d18391d1eab9b4ba56fc.php 第 50 行.
+NOTIC: [8] Undefined variable: download D:\phpStudy\WWW\Blog\Runtime\Cache\Home\dc5869df7c59d18391d1eab9b4ba56fc.php 第 51 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-04-18T11:08:15+08:00 ] 127.0.0.1 /home/public/nav
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.080005s ]
+NOTIC: [2] preg_match(): No ending delimiter '/' found D:\phpStudy\WWW\Blog\ThinkPHP\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.040002s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.040002s ]
+SQL: SHOW COLUMNS FROM `lt_tag` [ RunTime:1.5501s ]
+SQL: SELECT * FROM `lt_tag`  [ RunTime:0.3250s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.034002s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.034002s ]
+NOTIC: [8] Undefined variable: index D:\phpStudy\WWW\Blog\Runtime\Cache\Home\dc5869df7c59d18391d1eab9b4ba56fc.php 第 37 行.
+NOTIC: [8] Undefined variable: about D:\phpStudy\WWW\Blog\Runtime\Cache\Home\dc5869df7c59d18391d1eab9b4ba56fc.php 第 38 行.
+NOTIC: [8] Undefined variable: class D:\phpStudy\WWW\Blog\Runtime\Cache\Home\dc5869df7c59d18391d1eab9b4ba56fc.php 第 39 行.
+NOTIC: [8] Undefined variable: feel D:\phpStudy\WWW\Blog\Runtime\Cache\Home\dc5869df7c59d18391d1eab9b4ba56fc.php 第 47 行.
+NOTIC: [8] Undefined variable: album D:\phpStudy\WWW\Blog\Runtime\Cache\Home\dc5869df7c59d18391d1eab9b4ba56fc.php 第 48 行.
+NOTIC: [8] Undefined variable: friends D:\phpStudy\WWW\Blog\Runtime\Cache\Home\dc5869df7c59d18391d1eab9b4ba56fc.php 第 49 行.
+NOTIC: [8] Undefined variable: gust D:\phpStudy\WWW\Blog\Runtime\Cache\Home\dc5869df7c59d18391d1eab9b4ba56fc.php 第 50 行.
+NOTIC: [8] Undefined variable: download D:\phpStudy\WWW\Blog\Runtime\Cache\Home\dc5869df7c59d18391d1eab9b4ba56fc.php 第 51 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.460027s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.460027s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.050002s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.050002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.012001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.013001s ]
+
+[ 2018-04-18T11:09:18+08:00 ] 127.0.0.1 /home/public/nav
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] preg_match(): No ending delimiter '/' found D:\phpStudy\WWW\Blog\ThinkPHP\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lt_tag` [ RunTime:0.1050s ]
+SQL: SELECT * FROM `lt_tag`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: index D:\phpStudy\WWW\Blog\Runtime\Cache\Home\dc5869df7c59d18391d1eab9b4ba56fc.php 第 37 行.
+NOTIC: [8] Undefined variable: about D:\phpStudy\WWW\Blog\Runtime\Cache\Home\dc5869df7c59d18391d1eab9b4ba56fc.php 第 38 行.
+NOTIC: [8] Undefined variable: class D:\phpStudy\WWW\Blog\Runtime\Cache\Home\dc5869df7c59d18391d1eab9b4ba56fc.php 第 39 行.
+NOTIC: [8] Undefined variable: feel D:\phpStudy\WWW\Blog\Runtime\Cache\Home\dc5869df7c59d18391d1eab9b4ba56fc.php 第 47 行.
+NOTIC: [8] Undefined variable: album D:\phpStudy\WWW\Blog\Runtime\Cache\Home\dc5869df7c59d18391d1eab9b4ba56fc.php 第 48 行.
+NOTIC: [8] Undefined variable: friends D:\phpStudy\WWW\Blog\Runtime\Cache\Home\dc5869df7c59d18391d1eab9b4ba56fc.php 第 49 行.
+NOTIC: [8] Undefined variable: gust D:\phpStudy\WWW\Blog\Runtime\Cache\Home\dc5869df7c59d18391d1eab9b4ba56fc.php 第 50 行.
+NOTIC: [8] Undefined variable: download D:\phpStudy\WWW\Blog\Runtime\Cache\Home\dc5869df7c59d18391d1eab9b4ba56fc.php 第 51 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.095006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.096006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-04-18T11:11:01+08:00 ] 127.0.0.1 /home/public/nav
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] preg_match(): No ending delimiter '/' found D:\phpStudy\WWW\Blog\ThinkPHP\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `lt_tag` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `lt_tag`  [ RunTime:0.0000s ]
+
+[ 2018-04-18T11:11:02+08:00 ] 127.0.0.1 /favicon.ico
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): No ending delimiter '/' found D:\phpStudy\WWW\Blog\ThinkPHP\Library\Think\Route.class.php 第 58 行.
+
+[ 2018-04-18T11:11:16+08:00 ] 127.0.0.1 /home/public/nav
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] preg_match(): No ending delimiter '/' found D:\phpStudy\WWW\Blog\ThinkPHP\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `lt_tag` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `lt_tag`  [ RunTime:0.0410s ]
+
+[ 2018-04-18T11:11:46+08:00 ] 127.0.0.1 /home/public/nav
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): No ending delimiter '/' found D:\phpStudy\WWW\Blog\ThinkPHP\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lt_tag` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `lt_tag`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: index D:\phpStudy\WWW\Blog\Runtime\Cache\Home\dc5869df7c59d18391d1eab9b4ba56fc.php 第 37 行.
+NOTIC: [8] Undefined variable: about D:\phpStudy\WWW\Blog\Runtime\Cache\Home\dc5869df7c59d18391d1eab9b4ba56fc.php 第 38 行.
+NOTIC: [8] Undefined variable: class D:\phpStudy\WWW\Blog\Runtime\Cache\Home\dc5869df7c59d18391d1eab9b4ba56fc.php 第 39 行.
+NOTIC: [8] Undefined variable: feel D:\phpStudy\WWW\Blog\Runtime\Cache\Home\dc5869df7c59d18391d1eab9b4ba56fc.php 第 47 行.
+NOTIC: [8] Undefined variable: album D:\phpStudy\WWW\Blog\Runtime\Cache\Home\dc5869df7c59d18391d1eab9b4ba56fc.php 第 48 行.
+NOTIC: [8] Undefined variable: friends D:\phpStudy\WWW\Blog\Runtime\Cache\Home\dc5869df7c59d18391d1eab9b4ba56fc.php 第 49 行.
+NOTIC: [8] Undefined variable: gust D:\phpStudy\WWW\Blog\Runtime\Cache\Home\dc5869df7c59d18391d1eab9b4ba56fc.php 第 50 行.
+NOTIC: [8] Undefined variable: download D:\phpStudy\WWW\Blog\Runtime\Cache\Home\dc5869df7c59d18391d1eab9b4ba56fc.php 第 51 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-04-18T11:12:13+08:00 ] 127.0.0.1 /home/public/nav
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] preg_match(): No ending delimiter '/' found D:\phpStudy\WWW\Blog\ThinkPHP\Library\Think\Route.class.php 第 58 行.
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lt_tag` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `lt_tag`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: index D:\phpStudy\WWW\Blog\Runtime\Cache\Home\dc5869df7c59d18391d1eab9b4ba56fc.php 第 37 行.
+NOTIC: [8] Undefined variable: about D:\phpStudy\WWW\Blog\Runtime\Cache\Home\dc5869df7c59d18391d1eab9b4ba56fc.php 第 38 行.
+NOTIC: [8] Undefined variable: class D:\phpStudy\WWW\Blog\Runtime\Cache\Home\dc5869df7c59d18391d1eab9b4ba56fc.php 第 39 行.
+NOTIC: [8] Undefined variable: feel D:\phpStudy\WWW\Blog\Runtime\Cache\Home\dc5869df7c59d18391d1eab9b4ba56fc.php 第 47 行.
+NOTIC: [8] Undefined variable: album D:\phpStudy\WWW\Blog\Runtime\Cache\Home\dc5869df7c59d18391d1eab9b4ba56fc.php 第 48 行.
+NOTIC: [8] Undefined variable: friends D:\phpStudy\WWW\Blog\Runtime\Cache\Home\dc5869df7c59d18391d1eab9b4ba56fc.php 第 49 行.
+NOTIC: [8] Undefined variable: gust D:\phpStudy\WWW\Blog\Runtime\Cache\Home\dc5869df7c59d18391d1eab9b4ba56fc.php 第 50 行.
+NOTIC: [8] Undefined variable: download D:\phpStudy\WWW\Blog\Runtime\Cache\Home\dc5869df7c59d18391d1eab9b4ba56fc.php 第 51 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.063004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2018-04-18T11:12:44+08:00 ] 127.0.0.1 /home/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lt_ppt` [ RunTime:0.0900s ]
+SQL: SELECT * FROM `lt_ppt` WHERE `pp_view` = 1 ORDER BY pp_time desc LIMIT 3   [ RunTime:0.1100s ]
+SQL: SHOW COLUMNS FROM `lt_article` [ RunTime:0.1620s ]
+SQL: SELECT * FROM lt_article a left join lt_tag t on a.tag_id=t.t_id  WHERE ( a_view>0 ) ORDER BY a_time desc  [ RunTime:0.2240s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: index D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 42 行.
+NOTIC: [8] Undefined variable: about D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 43 行.
+NOTIC: [8] Undefined variable: class D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 44 行.
+NOTIC: [8] Undefined variable: tag D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 47 行.
+NOTIC: [8] Undefined variable: feel D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 52 行.
+NOTIC: [8] Undefined variable: album D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 53 行.
+NOTIC: [8] Undefined variable: friends D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 54 行.
+NOTIC: [8] Undefined variable: gust D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 55 行.
+NOTIC: [8] Undefined variable: download D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 56 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 81 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 88 行.
+NOTIC: [8] Undefined variable: tmp D:\phpStudy\WWW\Blog\Application\Common\Common\function.php 第 307 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 81 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 88 行.
+NOTIC: [8] Undefined variable: tmp D:\phpStudy\WWW\Blog\Application\Common\Common\function.php 第 307 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 81 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 88 行.
+NOTIC: [8] Undefined variable: tmp D:\phpStudy\WWW\Blog\Application\Common\Common\function.php 第 307 行.
+NOTIC: [8] Undefined variable: version D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 114 行.
+NOTIC: [8] Undefined variable: tag D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 124 行.
+NOTIC: [8] Undefined variable: s_article D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 135 行.
+NOTIC: [8] Undefined variable: s_content D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 154 行.
+NOTIC: [8] Undefined variable: gusts D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 188 行.
+NOTIC: [8] Undefined variable: hits D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 202 行.
+NOTIC: [8] Undefined variable: link D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 210 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 223 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 225 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 229 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 231 行.
+NOTIC: [8] Undefined variable: system D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 235 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 237 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 241 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 243 行.
+NOTIC: [8] Undefined variable: system D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 247 行.
+NOTIC: [8] Undefined variable: version D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 262 行.
+NOTIC: [8] Undefined variable: f_article D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 283 行.
+NOTIC: [8] Undefined variable: foot_album D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 288 行.
+NOTIC: [8] Undefined variable: system D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 296 行.
+NOTIC: [8] Undefined variable: system D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 299 行.
+NOTIC: [8] Undefined variable: system D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 299 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.330019s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.331019s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-04-18T11:18:46+08:00 ] 127.0.0.1 /home/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lt_ppt` [ RunTime:0.0500s ]
+SQL: SELECT * FROM `lt_ppt` WHERE `pp_view` = 1 ORDER BY pp_time desc LIMIT 3   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lt_article` [ RunTime:0.0050s ]
+SQL: SELECT * FROM lt_article a left join lt_tag t on a.tag_id=t.t_id  WHERE ( a_view>0 ) ORDER BY a_time desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lt_tag` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `lt_tag`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: index D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 42 行.
+NOTIC: [8] Undefined variable: about D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 43 行.
+NOTIC: [8] Undefined variable: class D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 44 行.
+NOTIC: [8] Undefined variable: feel D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 52 行.
+NOTIC: [8] Undefined variable: album D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 53 行.
+NOTIC: [8] Undefined variable: friends D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 54 行.
+NOTIC: [8] Undefined variable: gust D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 55 行.
+NOTIC: [8] Undefined variable: download D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 56 行.
+NOTIC: [8] Undefined variable: ppt D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 65 行.
+NOTIC: [8] Undefined variable: ppt D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 65 行.
+NOTIC: [8] Undefined variable: ppt D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 65 行.
+NOTIC: [8] Undefined variable: ppt D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 66 行.
+NOTIC: [8] Undefined variable: ppt D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 66 行.
+NOTIC: [8] Undefined variable: ppt D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 66 行.
+NOTIC: [8] Undefined variable: ppt D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 67 行.
+NOTIC: [8] Undefined variable: ppt D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 67 行.
+NOTIC: [8] Undefined variable: ppt D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 67 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 81 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 88 行.
+NOTIC: [8] Undefined variable: tmp D:\phpStudy\WWW\Blog\Application\Common\Common\function.php 第 307 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 81 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 88 行.
+NOTIC: [8] Undefined variable: tmp D:\phpStudy\WWW\Blog\Application\Common\Common\function.php 第 307 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 81 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 88 行.
+NOTIC: [8] Undefined variable: tmp D:\phpStudy\WWW\Blog\Application\Common\Common\function.php 第 307 行.
+NOTIC: [8] Undefined variable: version D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 114 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 124 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 126 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 127 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 128 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_id D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_keyword D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 124 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 126 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 127 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 128 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_id D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_keyword D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 124 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 126 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 127 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 128 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_id D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_keyword D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 124 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 126 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 127 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 128 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_id D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_keyword D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 124 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 126 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 127 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 128 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_id D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_keyword D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 124 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 126 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 127 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 128 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_id D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_keyword D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined variable: s_article D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 135 行.
+NOTIC: [8] Undefined variable: s_content D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 154 行.
+NOTIC: [8] Undefined variable: gusts D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 188 行.
+NOTIC: [8] Undefined variable: hits D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 202 行.
+NOTIC: [8] Undefined variable: link D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 210 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 223 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 225 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 229 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 231 行.
+NOTIC: [8] Undefined variable: system D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 235 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 237 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 241 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 243 行.
+NOTIC: [8] Undefined variable: system D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 247 行.
+NOTIC: [8] Undefined variable: version D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 262 行.
+NOTIC: [8] Undefined variable: f_article D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 283 行.
+NOTIC: [8] Undefined variable: foot_album D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 288 行.
+NOTIC: [8] Undefined variable: system D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 296 行.
+NOTIC: [8] Undefined variable: system D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 299 行.
+NOTIC: [8] Undefined variable: system D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 299 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.071004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.071004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-04-18T11:18:51+08:00 ] 127.0.0.1 /home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lt_ppt` [ RunTime:0.0230s ]
+SQL: SELECT * FROM `lt_ppt` WHERE `pp_view` = 1 ORDER BY pp_time desc LIMIT 3   [ RunTime:0.0220s ]
+SQL: SHOW COLUMNS FROM `lt_article` [ RunTime:0.0260s ]
+SQL: SELECT * FROM lt_article a left join lt_tag t on a.tag_id=t.t_id  WHERE ( a_view>0 ) ORDER BY a_time desc  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `lt_tag` [ RunTime:0.0230s ]
+SQL: SELECT * FROM `lt_tag`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: index D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 42 行.
+NOTIC: [8] Undefined variable: about D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 43 行.
+NOTIC: [8] Undefined variable: class D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 44 行.
+NOTIC: [8] Undefined variable: feel D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 52 行.
+NOTIC: [8] Undefined variable: album D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 53 行.
+NOTIC: [8] Undefined variable: friends D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 54 行.
+NOTIC: [8] Undefined variable: gust D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 55 行.
+NOTIC: [8] Undefined variable: download D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 56 行.
+NOTIC: [8] Undefined variable: ppt D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 65 行.
+NOTIC: [8] Undefined variable: ppt D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 65 行.
+NOTIC: [8] Undefined variable: ppt D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 65 行.
+NOTIC: [8] Undefined variable: ppt D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 66 行.
+NOTIC: [8] Undefined variable: ppt D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 66 行.
+NOTIC: [8] Undefined variable: ppt D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 66 行.
+NOTIC: [8] Undefined variable: ppt D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 67 行.
+NOTIC: [8] Undefined variable: ppt D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 67 行.
+NOTIC: [8] Undefined variable: ppt D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 67 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 81 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 88 行.
+NOTIC: [8] Undefined variable: tmp D:\phpStudy\WWW\Blog\Application\Common\Common\function.php 第 307 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 81 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 88 行.
+NOTIC: [8] Undefined variable: tmp D:\phpStudy\WWW\Blog\Application\Common\Common\function.php 第 307 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 81 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 88 行.
+NOTIC: [8] Undefined variable: tmp D:\phpStudy\WWW\Blog\Application\Common\Common\function.php 第 307 行.
+NOTIC: [8] Undefined variable: version D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 114 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 124 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 126 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 127 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 128 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_id D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_keyword D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 124 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 126 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 127 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 128 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_id D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_keyword D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 124 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 126 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 127 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 128 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_id D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_keyword D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 124 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 126 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 127 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 128 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_id D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_keyword D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 124 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 126 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 127 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 128 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_id D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_keyword D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 124 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 126 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 127 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 128 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_id D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_keyword D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined variable: s_article D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 135 行.
+NOTIC: [8] Undefined variable: s_content D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 154 行.
+NOTIC: [8] Undefined variable: gusts D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 188 行.
+NOTIC: [8] Undefined variable: hits D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 202 行.
+NOTIC: [8] Undefined variable: link D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 210 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 223 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 225 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 229 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 231 行.
+NOTIC: [8] Undefined variable: system D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 235 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 237 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 241 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 243 行.
+NOTIC: [8] Undefined variable: system D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 247 行.
+NOTIC: [8] Undefined variable: version D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 262 行.
+NOTIC: [8] Undefined variable: f_article D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 283 行.
+NOTIC: [8] Undefined variable: foot_album D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 288 行.
+NOTIC: [8] Undefined variable: system D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 296 行.
+NOTIC: [8] Undefined variable: system D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 299 行.
+NOTIC: [8] Undefined variable: system D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 299 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.067004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.067004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-04-18T11:19:53+08:00 ] 127.0.0.1 /home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lt_ppt` [ RunTime:0.0240s ]
+SQL: SELECT * FROM `lt_ppt` WHERE `pp_view` = 1 ORDER BY pp_time desc LIMIT 3   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `lt_article` [ RunTime:0.0250s ]
+SQL: SELECT * FROM lt_article a left join lt_tag t on a.tag_id=t.t_id  WHERE ( a_view>0 ) ORDER BY a_time desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lt_tag` [ RunTime:0.0250s ]
+SQL: SELECT * FROM `lt_tag`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: index D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 42 行.
+NOTIC: [8] Undefined variable: about D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 43 行.
+NOTIC: [8] Undefined variable: class D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 44 行.
+NOTIC: [8] Undefined variable: feel D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 52 行.
+NOTIC: [8] Undefined variable: album D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 53 行.
+NOTIC: [8] Undefined variable: friends D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 54 行.
+NOTIC: [8] Undefined variable: gust D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 55 行.
+NOTIC: [8] Undefined variable: download D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 56 行.
+NOTIC: [8] Undefined variable: ppt D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 65 行.
+NOTIC: [8] Undefined variable: ppt D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 65 行.
+NOTIC: [8] Undefined variable: ppt D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 65 行.
+NOTIC: [8] Undefined variable: ppt D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 66 行.
+NOTIC: [8] Undefined variable: ppt D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 66 行.
+NOTIC: [8] Undefined variable: ppt D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 66 行.
+NOTIC: [8] Undefined variable: ppt D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 67 行.
+NOTIC: [8] Undefined variable: ppt D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 67 行.
+NOTIC: [8] Undefined variable: ppt D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 67 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 81 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 88 行.
+NOTIC: [8] Undefined variable: tmp D:\phpStudy\WWW\Blog\Application\Common\Common\function.php 第 307 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 81 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 88 行.
+NOTIC: [8] Undefined variable: tmp D:\phpStudy\WWW\Blog\Application\Common\Common\function.php 第 307 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 81 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 88 行.
+NOTIC: [8] Undefined variable: tmp D:\phpStudy\WWW\Blog\Application\Common\Common\function.php 第 307 行.
+NOTIC: [8] Undefined variable: version D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 114 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 124 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 126 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 127 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 128 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_id D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_keyword D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 124 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 126 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 127 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 128 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_id D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_keyword D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 124 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 126 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 127 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 128 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_id D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_keyword D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 124 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 126 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 127 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 128 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_id D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_keyword D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 124 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 126 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 127 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 128 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_id D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_keyword D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 124 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 126 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 127 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 128 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_id D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_keyword D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined variable: s_article D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 135 行.
+NOTIC: [8] Undefined variable: s_content D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 154 行.
+NOTIC: [8] Undefined variable: gusts D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 188 行.
+NOTIC: [8] Undefined variable: hits D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 202 行.
+NOTIC: [8] Undefined variable: link D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 210 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 223 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 225 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 229 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 231 行.
+NOTIC: [8] Undefined variable: system D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 235 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 237 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 241 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 243 行.
+NOTIC: [8] Undefined variable: system D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 247 行.
+NOTIC: [8] Undefined variable: version D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 262 行.
+NOTIC: [8] Undefined variable: f_article D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 283 行.
+NOTIC: [8] Undefined variable: foot_album D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 288 行.
+NOTIC: [8] Undefined variable: system D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 296 行.
+NOTIC: [8] Undefined variable: system D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 299 行.
+NOTIC: [8] Undefined variable: system D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 299 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.094005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.094005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-04-18T11:19:58+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lt_ppt` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `lt_ppt` WHERE `pp_view` = 1 ORDER BY pp_time desc LIMIT 3   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lt_article` [ RunTime:0.0170s ]
+SQL: SELECT * FROM lt_article a left join lt_tag t on a.tag_id=t.t_id  WHERE ( a_view>0 ) ORDER BY a_time desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lt_tag` [ RunTime:0.0240s ]
+SQL: SELECT * FROM `lt_tag`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: index D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 42 行.
+NOTIC: [8] Undefined variable: about D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 43 行.
+NOTIC: [8] Undefined variable: class D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 44 行.
+NOTIC: [8] Undefined variable: feel D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 52 行.
+NOTIC: [8] Undefined variable: album D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 53 行.
+NOTIC: [8] Undefined variable: friends D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 54 行.
+NOTIC: [8] Undefined variable: gust D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 55 行.
+NOTIC: [8] Undefined variable: download D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 56 行.
+NOTIC: [8] Undefined variable: ppt D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 65 行.
+NOTIC: [8] Undefined variable: ppt D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 65 行.
+NOTIC: [8] Undefined variable: ppt D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 65 行.
+NOTIC: [8] Undefined variable: ppt D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 66 行.
+NOTIC: [8] Undefined variable: ppt D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 66 行.
+NOTIC: [8] Undefined variable: ppt D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 66 行.
+NOTIC: [8] Undefined variable: ppt D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 67 行.
+NOTIC: [8] Undefined variable: ppt D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 67 行.
+NOTIC: [8] Undefined variable: ppt D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 67 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 81 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 88 行.
+NOTIC: [8] Undefined variable: tmp D:\phpStudy\WWW\Blog\Application\Common\Common\function.php 第 307 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 81 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 88 行.
+NOTIC: [8] Undefined variable: tmp D:\phpStudy\WWW\Blog\Application\Common\Common\function.php 第 307 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 81 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 88 行.
+NOTIC: [8] Undefined variable: tmp D:\phpStudy\WWW\Blog\Application\Common\Common\function.php 第 307 行.
+NOTIC: [8] Undefined variable: version D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 114 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 124 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 126 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 127 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 128 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_id D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_keyword D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 124 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 126 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 127 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 128 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_id D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_keyword D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 124 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 126 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 127 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 128 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_id D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_keyword D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 124 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 126 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 127 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 128 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_id D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_keyword D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 124 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 126 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 127 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 128 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_id D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_keyword D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 124 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 126 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 127 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 128 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_id D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_keyword D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined variable: s_article D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 135 行.
+NOTIC: [8] Undefined variable: s_content D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 154 行.
+NOTIC: [8] Undefined variable: gusts D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 188 行.
+NOTIC: [8] Undefined variable: hits D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 202 行.
+NOTIC: [8] Undefined variable: link D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 210 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 223 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 225 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 229 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 231 行.
+NOTIC: [8] Undefined variable: system D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 235 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 237 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 241 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 243 行.
+NOTIC: [8] Undefined variable: system D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 247 行.
+NOTIC: [8] Undefined variable: version D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 262 行.
+NOTIC: [8] Undefined variable: f_article D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 283 行.
+NOTIC: [8] Undefined variable: foot_album D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 288 行.
+NOTIC: [8] Undefined variable: system D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 296 行.
+NOTIC: [8] Undefined variable: system D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 299 行.
+NOTIC: [8] Undefined variable: system D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 299 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.063003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.063003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-18T11:20:27+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lt_ppt` [ RunTime:0.0190s ]
+SQL: SELECT * FROM `lt_ppt` WHERE `pp_view` = 1 ORDER BY pp_time desc LIMIT 3   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lt_article` [ RunTime:0.0180s ]
+SQL: SELECT * FROM lt_article a left join lt_tag t on a.tag_id=t.t_id  WHERE ( a_view>0 ) ORDER BY a_time desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `lt_tag` [ RunTime:0.0160s ]
+SQL: SELECT * FROM `lt_tag`  [ RunTime:0.0050s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: index D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 42 行.
+NOTIC: [8] Undefined variable: about D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 43 行.
+NOTIC: [8] Undefined variable: class D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 44 行.
+NOTIC: [8] Undefined variable: feel D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 52 行.
+NOTIC: [8] Undefined variable: album D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 53 行.
+NOTIC: [8] Undefined variable: friends D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 54 行.
+NOTIC: [8] Undefined variable: gust D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 55 行.
+NOTIC: [8] Undefined variable: download D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 56 行.
+NOTIC: [8] Undefined variable: ppt D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 65 行.
+NOTIC: [8] Undefined variable: ppt D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 65 行.
+NOTIC: [8] Undefined variable: ppt D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 65 行.
+NOTIC: [8] Undefined variable: ppt D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 66 行.
+NOTIC: [8] Undefined variable: ppt D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 66 行.
+NOTIC: [8] Undefined variable: ppt D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 66 行.
+NOTIC: [8] Undefined variable: ppt D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 67 行.
+NOTIC: [8] Undefined variable: ppt D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 67 行.
+NOTIC: [8] Undefined variable: ppt D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 67 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 81 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 88 行.
+NOTIC: [8] Undefined variable: tmp D:\phpStudy\WWW\Blog\Application\Common\Common\function.php 第 307 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 81 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 88 行.
+NOTIC: [8] Undefined variable: tmp D:\phpStudy\WWW\Blog\Application\Common\Common\function.php 第 307 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 81 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 88 行.
+NOTIC: [8] Undefined variable: tmp D:\phpStudy\WWW\Blog\Application\Common\Common\function.php 第 307 行.
+NOTIC: [8] Undefined variable: version D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 114 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 124 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 126 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 127 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 128 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_id D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_keyword D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 124 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 126 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 127 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 128 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_id D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_keyword D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 124 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 126 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 127 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 128 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_id D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_keyword D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 124 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 126 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 127 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 128 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_id D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_keyword D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 124 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 126 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 127 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 128 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_id D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_keyword D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 124 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 126 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 127 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 128 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_id D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_keyword D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined variable: s_article D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 135 行.
+NOTIC: [8] Undefined variable: s_content D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 154 行.
+NOTIC: [8] Undefined variable: gusts D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 188 行.
+NOTIC: [8] Undefined variable: hits D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 202 行.
+NOTIC: [8] Undefined variable: link D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 210 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 223 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 225 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 229 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 231 行.
+NOTIC: [8] Undefined variable: system D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 235 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 237 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 241 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 243 行.
+NOTIC: [8] Undefined variable: system D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 247 行.
+NOTIC: [8] Undefined variable: version D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 262 行.
+NOTIC: [8] Undefined variable: f_article D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 283 行.
+NOTIC: [8] Undefined variable: foot_album D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 288 行.
+NOTIC: [8] Undefined variable: system D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 296 行.
+NOTIC: [8] Undefined variable: system D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 299 行.
+NOTIC: [8] Undefined variable: system D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 299 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.073004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.073004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002001s ]
+
+[ 2018-04-18T11:20:44+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lt_tag` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `lt_tag`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: index D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 42 行.
+NOTIC: [8] Undefined variable: about D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 43 行.
+NOTIC: [8] Undefined variable: class D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 44 行.
+NOTIC: [8] Undefined variable: feel D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 52 行.
+NOTIC: [8] Undefined variable: album D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 53 行.
+NOTIC: [8] Undefined variable: friends D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 54 行.
+NOTIC: [8] Undefined variable: gust D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 55 行.
+NOTIC: [8] Undefined variable: download D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 56 行.
+NOTIC: [8] Undefined variable: ppt D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 65 行.
+NOTIC: [8] Undefined variable: ppt D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 65 行.
+NOTIC: [8] Undefined variable: ppt D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 65 行.
+NOTIC: [8] Undefined variable: ppt D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 66 行.
+NOTIC: [8] Undefined variable: ppt D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 66 行.
+NOTIC: [8] Undefined variable: ppt D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 66 行.
+NOTIC: [8] Undefined variable: ppt D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 67 行.
+NOTIC: [8] Undefined variable: ppt D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 67 行.
+NOTIC: [8] Undefined variable: ppt D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 67 行.
+NOTIC: [8] Undefined variable: articles D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 75 行.
+NOTIC: [8] Undefined variable: version D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 114 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 124 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 126 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 127 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 128 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_id D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_keyword D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 124 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 126 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 127 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 128 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_id D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_keyword D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 124 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 126 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 127 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 128 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_id D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_keyword D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 124 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 126 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 127 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 128 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_id D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_keyword D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 124 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 126 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 127 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 128 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_id D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_keyword D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 124 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 126 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 127 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 128 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_id D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_keyword D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined variable: s_article D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 135 行.
+NOTIC: [8] Undefined variable: s_content D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 154 行.
+NOTIC: [8] Undefined variable: gusts D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 188 行.
+NOTIC: [8] Undefined variable: hits D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 202 行.
+NOTIC: [8] Undefined variable: link D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 210 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 223 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 225 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 229 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 231 行.
+NOTIC: [8] Undefined variable: system D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 235 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 237 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 241 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 243 行.
+NOTIC: [8] Undefined variable: system D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 247 行.
+NOTIC: [8] Undefined variable: version D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 262 行.
+NOTIC: [8] Undefined variable: f_article D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 283 行.
+NOTIC: [8] Undefined variable: foot_album D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 288 行.
+NOTIC: [8] Undefined variable: system D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 296 行.
+NOTIC: [8] Undefined variable: system D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 299 行.
+NOTIC: [8] Undefined variable: system D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 299 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.081004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.081004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-04-18T11:21:23+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `lt_tag` [ RunTime:0.0250s ]
+SQL: SELECT * FROM `lt_tag`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: index D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 42 行.
+NOTIC: [8] Undefined variable: about D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 43 行.
+NOTIC: [8] Undefined variable: class D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 44 行.
+NOTIC: [8] Undefined variable: feel D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 52 行.
+NOTIC: [8] Undefined variable: album D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 53 行.
+NOTIC: [8] Undefined variable: friends D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 54 行.
+NOTIC: [8] Undefined variable: gust D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 55 行.
+NOTIC: [8] Undefined variable: download D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 56 行.
+NOTIC: [8] Undefined variable: ppt D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 65 行.
+NOTIC: [8] Undefined variable: ppt D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 65 行.
+NOTIC: [8] Undefined variable: ppt D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 65 行.
+NOTIC: [8] Undefined variable: ppt D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 66 行.
+NOTIC: [8] Undefined variable: ppt D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 66 行.
+NOTIC: [8] Undefined variable: ppt D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 66 行.
+NOTIC: [8] Undefined variable: ppt D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 67 行.
+NOTIC: [8] Undefined variable: ppt D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 67 行.
+NOTIC: [8] Undefined variable: ppt D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 67 行.
+NOTIC: [8] Undefined variable: articles D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 75 行.
+NOTIC: [8] Undefined variable: version D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 114 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 124 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 126 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 127 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 128 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_id D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_keyword D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 124 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 126 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 127 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 128 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_id D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_keyword D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 124 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 126 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 127 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 128 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_id D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_keyword D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 124 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 126 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 127 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 128 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_id D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_keyword D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 124 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 126 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 127 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 128 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_id D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_keyword D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 124 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 126 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 127 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 128 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_id D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_keyword D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined variable: s_article D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 135 行.
+NOTIC: [8] Undefined variable: s_content D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 154 行.
+NOTIC: [8] Undefined variable: gusts D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 188 行.
+NOTIC: [8] Undefined variable: hits D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 202 行.
+NOTIC: [8] Undefined variable: link D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 210 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 223 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 225 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 229 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 231 行.
+NOTIC: [8] Undefined variable: system D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 235 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 237 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 241 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 243 行.
+NOTIC: [8] Undefined variable: system D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 247 行.
+NOTIC: [8] Undefined variable: version D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 262 行.
+NOTIC: [8] Undefined variable: f_article D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 283 行.
+NOTIC: [8] Undefined variable: foot_album D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 288 行.
+NOTIC: [8] Undefined variable: system D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 296 行.
+NOTIC: [8] Undefined variable: system D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 299 行.
+NOTIC: [8] Undefined variable: system D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 299 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.083005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.083005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-04-18T11:21:25+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lt_tag` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `lt_tag`  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: index D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 42 行.
+NOTIC: [8] Undefined variable: about D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 43 行.
+NOTIC: [8] Undefined variable: class D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 44 行.
+NOTIC: [8] Undefined variable: feel D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 52 行.
+NOTIC: [8] Undefined variable: album D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 53 行.
+NOTIC: [8] Undefined variable: friends D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 54 行.
+NOTIC: [8] Undefined variable: gust D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 55 行.
+NOTIC: [8] Undefined variable: download D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 56 行.
+NOTIC: [8] Undefined variable: ppt D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 65 行.
+NOTIC: [8] Undefined variable: ppt D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 65 行.
+NOTIC: [8] Undefined variable: ppt D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 65 行.
+NOTIC: [8] Undefined variable: ppt D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 66 行.
+NOTIC: [8] Undefined variable: ppt D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 66 行.
+NOTIC: [8] Undefined variable: ppt D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 66 行.
+NOTIC: [8] Undefined variable: ppt D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 67 行.
+NOTIC: [8] Undefined variable: ppt D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 67 行.
+NOTIC: [8] Undefined variable: ppt D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 67 行.
+NOTIC: [8] Undefined variable: articles D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 75 行.
+NOTIC: [8] Undefined variable: version D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 114 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 124 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 126 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 127 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 128 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_id D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_keyword D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 124 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 126 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 127 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 128 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_id D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_keyword D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 124 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 126 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 127 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 128 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_id D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_keyword D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 124 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 126 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 127 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 128 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_id D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_keyword D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 124 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 126 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 127 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 128 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_id D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_keyword D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 124 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 126 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 127 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 128 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_id D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_keyword D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined variable: s_article D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 135 行.
+NOTIC: [8] Undefined variable: s_content D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 154 行.
+NOTIC: [8] Undefined variable: gusts D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 188 行.
+NOTIC: [8] Undefined variable: hits D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 202 行.
+NOTIC: [8] Undefined variable: link D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 210 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 223 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 225 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 229 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 231 行.
+NOTIC: [8] Undefined variable: system D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 235 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 237 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 241 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 243 行.
+NOTIC: [8] Undefined variable: system D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 247 行.
+NOTIC: [8] Undefined variable: version D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 262 行.
+NOTIC: [8] Undefined variable: f_article D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 283 行.
+NOTIC: [8] Undefined variable: foot_album D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 288 行.
+NOTIC: [8] Undefined variable: system D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 296 行.
+NOTIC: [8] Undefined variable: system D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 299 行.
+NOTIC: [8] Undefined variable: system D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 299 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.067004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.067004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+
+[ 2018-04-18T11:22:10+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-04-18T11:22:34+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lt_tag` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `lt_tag`  [ RunTime:0.0000s ]
+
+[ 2018-04-18T11:23:08+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lt_ppt` [ RunTime:0.0370s ]
+SQL: SELECT * FROM `lt_ppt` WHERE `pp_view` = 1 ORDER BY pp_time desc LIMIT 3   [ RunTime:0.0760s ]
+SQL: SHOW COLUMNS FROM `lt_article` [ RunTime:0.0190s ]
+SQL: SELECT * FROM lt_article a left join lt_tag t on a.tag_id=t.t_id  WHERE ( a_view>0 ) ORDER BY a_time desc  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `lt_tag` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `lt_tag`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: index D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 42 行.
+NOTIC: [8] Undefined variable: about D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 43 行.
+NOTIC: [8] Undefined variable: class D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 44 行.
+NOTIC: [8] Undefined variable: feel D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 52 行.
+NOTIC: [8] Undefined variable: album D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 53 行.
+NOTIC: [8] Undefined variable: friends D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 54 行.
+NOTIC: [8] Undefined variable: gust D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 55 行.
+NOTIC: [8] Undefined variable: download D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 56 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 81 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 88 行.
+NOTIC: [8] Undefined variable: tmp D:\phpStudy\WWW\Blog\Application\Common\Common\function.php 第 307 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 81 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 88 行.
+NOTIC: [8] Undefined variable: tmp D:\phpStudy\WWW\Blog\Application\Common\Common\function.php 第 307 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 81 行.
+NOTIC: [8] Undefined variable: v D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 88 行.
+NOTIC: [8] Undefined variable: tmp D:\phpStudy\WWW\Blog\Application\Common\Common\function.php 第 307 行.
+NOTIC: [8] Undefined variable: version D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 114 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 124 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 126 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 127 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 128 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_id D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_keyword D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 124 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 126 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 127 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 128 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_id D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_keyword D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 124 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 126 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 127 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 128 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_id D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_keyword D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 124 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 126 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 127 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 128 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_id D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_keyword D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 124 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 126 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 127 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 128 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_id D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_keyword D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 124 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 126 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 127 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 128 行.
+NOTIC: [8] Undefined index: key D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_id D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined index: a_keyword D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 129 行.
+NOTIC: [8] Undefined variable: s_article D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 135 行.
+NOTIC: [8] Undefined variable: s_content D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 154 行.
+NOTIC: [8] Undefined variable: gusts D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 188 行.
+NOTIC: [8] Undefined variable: hits D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 202 行.
+NOTIC: [8] Undefined variable: link D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 210 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 223 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 225 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 229 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 231 行.
+NOTIC: [8] Undefined variable: system D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 235 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 237 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 241 行.
+NOTIC: [8] Undefined variable: num D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 243 行.
+NOTIC: [8] Undefined variable: system D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 247 行.
+NOTIC: [8] Undefined variable: version D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 262 行.
+NOTIC: [8] Undefined variable: f_article D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 283 行.
+NOTIC: [8] Undefined variable: foot_album D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 288 行.
+NOTIC: [8] Undefined variable: system D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 296 行.
+NOTIC: [8] Undefined variable: system D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 299 行.
+NOTIC: [8] Undefined variable: system D:\phpStudy\WWW\Blog\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 299 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.070004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+

@@ -1,0 +1,86 @@
+<include file="Public:header"/>	
+<include file="Public:sidebar"/>	
+<div id="content">
+	<div id="content-header">
+		<h1>相册列表</h1>
+		<div class="btn-group">
+			<a href="{:U('Admin/Album/index')}" class="btn btn-large" title="新增相册"><i class="fa fa-file"></i></a>
+			<a href="{:U('Admin/Album/albumContentList')}" class="btn btn-large" title="相册评论"><i class="fa fa-comment"></i></a>
+		</div>
+	</div>
+	<div id="breadcrumb">
+		<a href="#" title="回到首页" class="tip-bottom"><i class="fa fa-home"></i> 首页</a>
+		<a href="#" class="current">相册列表</a>
+	</div>
+	<div class="row">
+		<div class="col-xs-12">
+			<div class="widget-box">
+				<div class="widget-title">
+					<span class="icon"><i class="fa fa-windows"></i></span><h5>相册列表</h5>
+					<span class="label label-info">{$count} 个相册</span>
+				</div>
+				<div class="widget-content">
+					<table class="table table-bordered table-striped table-hover ">
+						<thead>
+							<tr>
+								<th width="5%">相册编号</th>
+								<th width="15%">相册名</th>
+								<th width="15%">相册封面</th>
+								<th width="15%">添加时间</th>
+								<th width="15%">是否显示</th>
+								<th width="10%">操作</th>
+							</tr>
+						</thead>
+						<tbody>
+							<volist name="data.data" id="vo">
+							<tr>
+								<td class="id">{$vo.al_id}</td>
+								<td>{$vo.al_name}</td>
+								<td><img src="/{$vo.al_img}" width="80px" /></td>
+								<td>{$vo.al_time|date="Y-m-d H:i:s",###}</td>
+								<td>
+									<eq name="vo.al_view" value="0">
+										<span class=" btn-dark-red btn-xs">不显示</span>
+										<else/>
+										<span class=" btn-dark-green btn-xs">显示</span>
+										</eq>
+								
+								</td>
+								<td>
+									<a class="btn btn-success btn-sm" href="{:U('edit','id='.$vo['al_id'])}">编辑</a>&nbsp;&nbsp;
+									<button class="btn btn-danger btn-sm delalbum" data-img-id="{$vo.al_id}">删除</button>
+								</td>
+							</tr>
+							</volist>
+						</tbody>
+					</table>
+					{$data.show}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<include file="Public:footer"/> 
+ <script type="text/javascript" src="__layer__/layer.js"></script> 
+<script>
+$('.delalbum').click(function (){
+	var dele_id=$(this).attr('data-img-id');
+	var hang=$(this).parent().parent();
+	$.ajax({
+		url:"{:U('del')}",
+		type:'post',
+		datatype:'json',
+		data:{dele_id:dele_id},
+		success:function(msg){
+			if(msg.status==1){
+				layer.msg(msg.msg);
+				hang.remove();
+			}else{
+				layer.msg(msg.msg);
+			}
+		}
+	});
+});
+</script>
+</body>
+</html>

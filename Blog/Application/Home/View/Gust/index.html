@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>留言板 - {$Think.config.NAME}</title>
+  <meta name="keywords" content="{$system.keyword}" />
+  <meta name="description" content="{$system.remark}" />
+  <meta name="version" content="{$Think.config.NAME} v{$version}" />
+  <meta name="author" content="{$system.author}" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+   <style type="text/css">
+      .qqFace { margin-top: 4px; background: #fff; padding: 2px; border: 1px #dfe6f6 solid; }
+      .qqFace table td { padding: 0px; }
+      .qqFace table td img { cursor: pointer; border: 1px #fff solid; }
+      .qqFace table td img:hover { border: 1px #0066cc solid; }
+
+    </style>
+  <include file="Public:nav"/>
+  <div class="row aerousel">
+  <ol class="breadcrumb">
+      <li><a href="{:U('index/index')}">网站首页</a></li>
+      <li class="active">雁过留名&nbsp;|&nbsp;留言板</li>
+  </ol>
+  <div class="col-md-8 row-l gust">
+    <div class="alert alert-success alert-dismissible hidden-xs" role="alert">
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <a><span class=" glyphicon glyphicon-heart"></span></a>&nbsp;&nbsp;<strong>请文明留言</strong>
+    </div>
+
+    <volist name="data" id="v">
+    <div class="media connect">
+      <div class="media-left">
+      <notempty name="v.g_url">
+        <a href="{$v.g_url}" target="_blank" rel="nofollow" title="浏览 {$v.g_name}的网站?"><img class="media-object img-circle  img-50" src="{$v.g_img}" alt="{$v.g_name}"></a>
+      <else/>
+        <img class="media-object img-circle img-50" src="{$v.g_img}" alt="{$v.g_name}">
+      </notempty>       
+      </div>
+      <div class="media-body">
+      <div class="fool hidden-xs">#{$v.g_id}</div>
+        <p class="media-heading"><a><span class="glyphicon glyphicon-user"></span></a>&nbsp;&nbsp;&nbsp;{$v.g_name}&nbsp;&nbsp;&nbsp;<a><span class="glyphicon glyphicon-time"></span></a>&nbsp;{$v.g_time|date="Y-m-d H:i:s",###}&nbsp;&nbsp;&nbsp;&nbsp;<a class="from">{$v.g_from}</a>&nbsp;&nbsp;&nbsp;&nbsp;<a><span class="glyphicon glyphicon-map-marker"></span></a>&nbsp;&nbsp;{$v.ip}</p>
+        <div class="connect-box"> {$v.g_content|reFace}</div><hr>
+        <notempty name="v.g_rtime">
+        <div class="media">
+          <div class="media-left">
+          <a><img class="media-object img-circle img-50" src="{$system.admin_img}" alt="{$vo.g_rname}"></a>
+          </div>
+          <div class="media-body">
+          <p class="media-heading"><a><span class="glyphicon glyphicon-king"></span></a>&nbsp;&nbsp;&nbsp;{$v.g_rname}&nbsp;&nbsp;&nbsp;<a><span class="glyphicon glyphicon-send"></span></a>&nbsp;{$v.g_rtime|date="m-d H:i",###}&nbsp;&nbsp;&nbsp;&nbsp;回复&nbsp;<a>@{$v.g_name}</a>&nbsp;中说到:</p>
+          <div class="connect-box">{$v.g_rcontent|reFace}</div>
+          </div>
+        </div>
+        </notempty>
+      </div>
+    </div>
+
+    </volist>
+    <hr />
+     <div id="append">
+     
+   </div>
+   <hr/>
+    <div class="more">
+    <button class="loadmore"  id="loadmore" style="padding:10px;text-align: center;outline: none;">加载更多</button>
+</div>
+<div class="more">
+    <button class="nomore"  id="nomore" style="padding:10px;text-align: center;outline: none; display: none;">没有更多了</button>
+</div>
+<hr/>
+    <div class="home-from">
+      <div class="home-from-model"  data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+      我要评论
+      </div>
+      <div class="collapse" id="collapseExample">
+      <div class="well">
+            <div method="post" >
+      <input id="jump" type="hidden"  value="__SELF__" />
+      <include file="Public:form"/>         
+      <div class="form-group home-from-box">
+          <span class="emotion">表情</span>
+          <button class="btn btn-default btn-add-gust" id="btn" style="float:right;">提交</button>
+      </div>
+          </div>
+    </div>
+    </div>
+    </div>    
+  </div>
+  <include file="Public:sidebar"/>
+  <include file="Public:footer"/>
+<script type="text/javascript" src="__layer__/layer.js"></script>
+<script type="text/javascript">
+     $('.emotion').qqFace({
+        id: 'facebox',
+       assign:'content',
+       path:'__Arclist__/'
+    });
+     
+$('#btn').click(function (){
+
+  var name=$('#name').val();
+  var content=$("#content").val();
+ 
+  $.ajax({
+    url:"{:U('index')}",//出错
+    type:'post',
+    datatype:'json',
+    data:{name:name,
+        content:content
+     },
+    success:function (msg){
+      if(msg.status==1){
+          layer.msg(msg.msg);
+          location.href="{:U('index')}";
+      }else{
+        
+        layer.msg(msg.msg);
+      }
+    }
+  });
+});
+
+
+
+
+      var counter=0;
+      var num=0;
+      var pagesize=3;
+    $('#loadmore').click(function (){
+        counter++;
+        num=counter*pagesize;
+
+    $.ajax({
+        url:"{:U('ajaxlist')}",
+        type:'post',
+        datatype:'json',
+        data:{num:num,
+          pagesize:pagesize
+        },
+         
+      success:function (msg){
+        var msg=eval(msg);//注意返回的数据处理一下
+        var length=msg.length;
+        console.log(msg);
+      
+       $.each(msg,function (i,n){
+               
+               
+          function getMyDate(timea){  
+          var date=new Date(timea);//里面的参数是毫秒，13位。而不是秒 10位
+          var year=date.getFullYear();
+          var month=date.getMonth()+1;
+          var day=date.getDate();
+          var hour=date.getHours();
+          var minutes=date.getMinutes();
+          var seconds=date.getSeconds();
+         var time=year+"-"+month+"-"+day+" "+hour+":"+minutes+":"+seconds;
+            return time;  
+        }; 
+          var timeL=n.g_time*1000;
+          var timeH=n.g_rtime*1000;
+          var timeL = getMyDate(timeL);
+          var timeH = getMyDate(timeH);
+      
+       function replace(str){
+          var str = str.replace(/\</g,'&lt;');
+          var str = str.replace(/\>/g,'&gt;');
+          var str = str.replace(/\n/g,'<br/>');
+          var str = str.replace(/\[em_([0-9]*)\]/g,'<img src="/Public/Arclist/$1.gif" border="0" />',str);
+          return str;
+        };
+     
+            var g_content=n.g_content;/*var 变量 不能跟 n.g_形式*/
+            var g_rcontent=n.g_rcontent;
+            
+           var g_content=replace(g_content); 
+           var g_rcontent=replace(g_rcontent); 
+        
+
+
+   var str='<div class="media connect">'+
+        '<div class="media-left">'+
+        '<img class="media-object img-circle img-50" src="'+n.g_img+'" alt="'+n.g_name+'">'+
+        '</div>'+
+     '<div class="media-body">'+
+      '<div class="fool hidden-xs">#'+n.g_id+'楼</div>'+
+        '<p class="media-heading"><a><span class="glyphicon glyphicon-user"></span></a>&nbsp;&nbsp;&nbsp;'+n.g_name+'&nbsp;&nbsp;&nbsp;<a><span class="glyphicon glyphicon-time"></span></a>&nbsp;'+timeL+'&nbsp;&nbsp;&nbsp;&nbsp;</p>'+
+        '<div class="connect-box">'+g_content+'</div><hr/>'+
+        '<notempty name="'+timeH+'">'+
+        '<div class="media">'+
+          '<div class="media-left">'+
+          '<a><img class="media-object img-circle img-50" src="'+n.g_img+'" alt="'+n.g_rname+'"></a>'+
+        '</div>'+
+        '<div class="media-body">'+
+          '<p class="media-heading"><a><span class="glyphicon glyphicon-king"></span></a>&nbsp;&nbsp;&nbsp;'+n.g_rname+'&nbsp;&nbsp;&nbsp;<a><span class="glyphicon glyphicon-send"></span></a>&nbsp;'+timeH+'&nbsp;&nbsp;&nbsp;&nbsp;回复&nbsp;<a>@'+n.g_name+'</a>&nbsp;中说到：</p>'+
+          '<div class="connect-box">'+g_rcontent+'</div>'+
+        '</div>'+
+      '</div>'+
+   '</div>';
+    //把插入到div中
+          $('#append').append(str);
+          if(pagesize>length){
+            $('#nomore').show();
+            $('#loadmore').hide();     
+          }
+
+        });
+    }
+
+
+    });
+
+ });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+  </body>
+</html>

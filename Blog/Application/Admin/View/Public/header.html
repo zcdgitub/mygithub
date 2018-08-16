@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{$Think.config.NAME} 后台管理系统</title>
+		<meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="__CSS__/bootstrap.min.css" />
+		<link rel="stylesheet" href="__CSS__/my.css" />
+		<link rel="stylesheet" href="__CSS__/unicorn.css" />
+
+	</head>
+	<body data-color="grey" class="flat">
+	<div id="wrapper">
+			<div id="header">
+				<h1><a href="{:U('Admin/Index/index')}">Admin</a></h1>
+				<a id="menu-trigger" href="#"><i class="fa fa-bars"></i></a>
+			</div>
+
+			<div id="user-nav">
+	            <ul class="btn-group">
+	                <li class="btn" >
+	                	<a title="" href="#">
+	                		<i class="fa fa-user"></i>
+	                		<span class="text">{$Think.session.uname}</span>
+	                	</a>
+	                </li>
+	                <!-- <li class="btn dropdown" id="menu-messages">
+	                	<a href="#" data-toggle="dropdown" data-target="#menu-messages" class="dropdown-toggle">
+	                		<i class="fa fa-envelope"></i>
+	                		<span class="text">信息</span>
+	                		<span class="label label-danger">5</span>
+	                		<b class="caret"></b>
+	                	</a>
+	                    <ul class="dropdown-menu messages-menu">
+	                        <li>
+	                        	未处理信息
+	                        </li>
+	                        <li class="message-item">
+	                        	<a href="#">
+		                            <img alt="User Icon" src="__IMG__/av1.jpg" />
+		                            <div class="message-content">
+		                            	<span class="message-time">
+			                                3 分钟前留言
+			                            </span>
+		                                <span class="message-sender">
+		                                    张三
+		                                </span>
+		                                <span class="message">
+		                                   你好，请问我怎么可以获取程序源码？博客可以分享么谢谢
+		                                </span>
+		                            </div>
+	                        	</a>
+	                        </li>
+	                         <li class="message-item">
+	                        	<a href="#">
+		                            <img alt="User Icon" src="__IMG__/av1.jpg" />
+		                            <div class="message-content">
+		                            	<span class="message-time">
+			                                3 分钟前评论
+			                            </span>
+		                                <span class="message-sender">
+		                                    张三
+		                                </span>
+		                                <span class="message">
+		                                   你好，请问我怎么可以获取程序源码？博客可以分享么谢谢
+		                                </span>
+		                            </div>
+	                        	</a>
+	                        </li>
+	                         <li class="message-item">
+	                        	<a href="#">
+		                            <img alt="User Icon" src="__IMG__/av1.jpg" />
+		                            <div class="message-content">
+		                            	<span class="message-time">
+			                                3 分钟前留言
+			                            </span>
+		                                <span class="message-sender">
+		                                    张三
+		                                </span>
+		                                <span class="message">
+		                                   你好，请问我怎么可以获取程序源码？博客可以分享么谢谢
+		                                </span>
+		                            </div>
+	                        	</a>
+	                        </li>
+	                    </ul>
+	                </li> -->
+	                <li class="btn"><a title="" href="{:U('Admin/System/index')}"><i class="fa fa-cog"></i> <span class="text">系统设置</span></a></li>
+	                <li class="btn"><a title="" href="{:U('Admin/Index/out')}"><i class="fa fa-share"></i> <span class="text">退出</span></a></li>
+	            </ul>
+	        </div>
+
+	
+

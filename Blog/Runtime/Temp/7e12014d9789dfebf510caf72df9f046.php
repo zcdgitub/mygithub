@@ -1,0 +1,3 @@
+<?php
+//000000000010a:23:{s:4:"a_id";s:1:"4";s:5:"a_img";s:28:"/Upload/Thumb/1486284396.jpg";s:7:"a_title";s:13:"测试文章4";s:8:"a_remark";s:13:"测试文章4";s:9:"a_keyword";s:13:"测试文章4";s:3:"pid";s:1:"4";s:6:"a_time";s:10:"1486284383";s:9:"a_content";s:20:"<p>测试文章4</p>";s:6:"a_view";s:1:"1";s:5:"a_hit";s:1:"5";s:10:"a_original";s:1:"1";s:6:"a_from";s:5:"Win 7";s:8:"a_author";s:6:"张冲";s:4:"a_ip";s:9:"127.0.0.1";s:4:"t_id";s:1:"4";s:6:"t_name";s:5:"Other";s:6:"t_time";s:10:"1447661488";s:6:"t_sort";s:3:"100";s:6:"t_view";s:1:"1";s:8:"t_remark";s:6:"其他";s:4:"t_ip";s:15:"111.172.255.211";s:6:"t_from";s:5:"Win 7";s:6:"t_root";s:5:"admin";}
+?>

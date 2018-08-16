@@ -1,0 +1,93 @@
+[ 2018-05-30T13:28:26+08:00 ] 127.0.0.1 /admin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+
+[ 2018-05-30T13:28:26+08:00 ] 127.0.0.1 /Admin/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.071004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.071004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2018-05-30T13:28:35+08:00 ] 127.0.0.1 /Admin/User/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `lt_user` [ RunTime:0.0190s ]
+SQL: SELECT * FROM `lt_user` WHERE ( u_name='admin' ) LIMIT 1   [ RunTime:0.0130s ]
+
+[ 2018-05-30T13:28:41+08:00 ] 127.0.0.1 /admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: index D:\phpStudy\WWW\Blog\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 101 行.
+NOTIC: [8] Undefined variable: add D:\phpStudy\WWW\Blog\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 103 行.
+NOTIC: [8] Undefined variable: say D:\phpStudy\WWW\Blog\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 106 行.
+NOTIC: [8] Undefined variable: saylist D:\phpStudy\WWW\Blog\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 107 行.
+NOTIC: [8] Undefined variable: add D:\phpStudy\WWW\Blog\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 110 行.
+NOTIC: [8] Undefined variable: article D:\phpStudy\WWW\Blog\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 113 行.
+NOTIC: [8] Undefined variable: articlelist D:\phpStudy\WWW\Blog\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 114 行.
+NOTIC: [8] Undefined variable: content D:\phpStudy\WWW\Blog\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 118 行.
+NOTIC: [8] Undefined variable: saycontent D:\phpStudy\WWW\Blog\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 121 行.
+NOTIC: [8] Undefined variable: articlecontent D:\phpStudy\WWW\Blog\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 122 行.
+NOTIC: [8] Undefined variable: gustcontent D:\phpStudy\WWW\Blog\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 123 行.
+NOTIC: [8] Undefined variable: albumcontent D:\phpStudy\WWW\Blog\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 124 行.
+NOTIC: [8] Undefined index: class D:\phpStudy\WWW\Blog\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 127 行.
+NOTIC: [8] Undefined variable: tag D:\phpStudy\WWW\Blog\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 134 行.
+NOTIC: [8] Undefined variable: tagadd D:\phpStudy\WWW\Blog\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 137 行.
+NOTIC: [8] Undefined variable: taglist D:\phpStudy\WWW\Blog\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 138 行.
+NOTIC: [8] Undefined variable: link D:\phpStudy\WWW\Blog\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 141 行.
+NOTIC: [8] Undefined variable: linkadd D:\phpStudy\WWW\Blog\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 144 行.
+NOTIC: [8] Undefined variable: linklist D:\phpStudy\WWW\Blog\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 145 行.
+NOTIC: [8] Undefined variable: album D:\phpStudy\WWW\Blog\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 149 行.
+NOTIC: [8] Undefined variable: albumadd D:\phpStudy\WWW\Blog\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 152 行.
+NOTIC: [8] Undefined variable: albumlist D:\phpStudy\WWW\Blog\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 153 行.
+NOTIC: [8] Undefined variable: picture D:\phpStudy\WWW\Blog\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 157 行.
+NOTIC: [8] Undefined variable: pictureadd D:\phpStudy\WWW\Blog\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 160 行.
+NOTIC: [8] Undefined variable: picturelist D:\phpStudy\WWW\Blog\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 161 行.
+NOTIC: [8] Undefined variable: add D:\phpStudy\WWW\Blog\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 164 行.
+NOTIC: [8] Undefined variable: article D:\phpStudy\WWW\Blog\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 167 行.
+NOTIC: [8] Undefined variable: versionlist D:\phpStudy\WWW\Blog\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 168 行.
+NOTIC: [8] Undefined variable: system D:\phpStudy\WWW\Blog\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 171 行.
+NOTIC: [8] Undefined variable: systembasic D:\phpStudy\WWW\Blog\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 174 行.
+NOTIC: [8] Undefined variable: systemone D:\phpStudy\WWW\Blog\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 175 行.
+NOTIC: [8] Undefined variable: systememail D:\phpStudy\WWW\Blog\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 176 行.
+NOTIC: [8] Undefined variable: systemppt D:\phpStudy\WWW\Blog\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 177 行.
+NOTIC: [8] Undefined variable: s_content D:\phpStudy\WWW\Blog\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 247 行.
+NOTIC: [8] Undefined variable: gusts D:\phpStudy\WWW\Blog\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 289 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.255015s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.255015s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+

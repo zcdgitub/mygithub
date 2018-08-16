@@ -1,0 +1,3 @@
+<?php
+//000000000010a:1:{i:0;a:14:{s:6:"alc_id";s:1:"1";s:7:"alc_pid";s:1:"1";s:8:"alc_name";s:18:"测试相册评论";s:9:"alc_email";s:19:"admin@loveteemo.com";s:7:"alc_url";s:0:"";s:11:"alc_content";s:18:"测试相册评论";s:6:"alc_ip";s:9:"127.0.0.1";s:8:"alc_time";s:10:"1486283901";s:8:"alc_from";s:5:"Win 7";s:7:"alc_img";s:27:"/Public/Img/Portrait/73.jpg";s:9:"alc_rname";s:5:"admin";s:12:"alc_rcontent";s:24:"测试相册评论回复";s:9:"alc_rtime";s:10:"1486283914";s:2:"ip";s:12:"本机地址";}}
+?>

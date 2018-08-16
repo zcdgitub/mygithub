@@ -1,0 +1,132 @@
+<include file="Public:header"/>
+<include file="Public:sidebar"/>
+<div id="content">
+    <div id="breadcrumb">
+        <a href="index.html" title="回到首页" class="tip-bottom"><i class="fa fa-home"></i> 首页</a>
+            <a href="#">编辑内容</a>
+            <a href="#" class="current">编辑说说</a>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="widget-box">
+                    <div class="widget-title">
+                        <span class="icon">
+                            <i class="fa fa-volume-up"></i>                                    
+                        </span>
+                            <h5>编辑说说</h5>        
+                    </div>
+                    <div class="widget-content nopadding">
+                        <form action="" method="post" class="form-horizontal">
+                            
+                            <div class="form-group">
+                                <label class="col-sm-3 col-md-3 col-lg-1 control-label">说说内容</label>
+                                <div class="col-sm-9 col-md-9 col-lg-10">
+                                    
+
+                                     <script id="ueditor" name="s_content" type="text/plain" style="width:800px;height:500px;">{$shuoshuo.s_content|htmlspecialchars_decode}</script>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="col-sm-3 col-md-3 col-lg-1 control-label">发表时间</label>
+                                <div class=" col-sm-9 col-md-9 col-lg-10">
+                                    <div class="input-group input-group-sm">
+                                        <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                        <input type="text" value="{$shuoshuo.s_time|date='Y-m-d H:i:s',###}" class="form-control input-sm" id="time" name="s_time" />
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="col-sm-3 col-md-3 col-lg-1 control-label">是否显示</label>
+                                <div class="col-sm-9 col-md-9 col-lg-10">
+                                    <label><input type="radio" name="s_view" value="0" <eq name="shuoshuo.s_view" value="0">checked="checked"</eq> /> 不显示</label>
+                                    <label><input type="radio" name="s_view" value="1" <eq name="shuoshuo.s_view" value="1">checked="checked"</eq> /> 显示</label>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="col-sm-3 col-md-3 col-lg-1 control-label">发表自</label>
+                                <div class=" col-sm-9 col-md-9 col-lg-10">
+                                    <div class="input-group input-group-sm">
+                                        <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                        <input type="text" value="{:getOs()}" class="form-control input-sm" id="from"  name="s_from" />
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="col-sm-3 col-md-3 col-lg-1 control-label">发表人</label>
+                                <div class=" col-sm-9 col-md-9 col-lg-10">
+                                    <div class="input-group input-group-sm">
+                                        <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                        <input type="text" value="{$shuoshuo.s_author}"  class="form-control input-sm" id="user" name="s_author" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-3 col-md-3 col-lg-1 control-label">发表IP</label>
+                                <div class=" col-sm-9 col-md-9 col-lg-10">
+                                    <div class="input-group input-group-sm">
+                                        <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                        <input type="text" value="{:get_client_ip()}" class="form-control input-sm" id="ip" name="s_ip" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-3 col-md-3 col-lg-1 control-label">点击量</label>
+                                <div class=" col-sm-9 col-md-9 col-lg-10">
+                                    <div class="input-group input-group-sm">
+                                        <span class="input-group-addon"><i class="fa fa-fire"></i></span>
+                                        <input type="text" value="{$Think.config.HIT}" class="form-control input-sm" id="hit" name="s_hit" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-actions">                        
+                                <input type="submit" class="btn btn-success btn-sm" id="addsay" value="存入数据库">                 
+                                <button type="button" class="btn btn-danger btn-sm">取消</button>
+                            </div>
+                              <input type="hidden" name="s_id" value="{$shuoshuo.s_id}">
+                        </form>
+                    </div>
+                </div>                        
+            </div>
+        </div>
+    </div>
+</div>
+<include file="Public:footer"/> 
+<script type="text/javascript" src="__UE__/ueditor.config.js"></script>
+<script type="text/javascript" src="__UE__/ueditor.all.min.js"></script>
+<script type="text/javascript" src="__UE__/lang/zh-cn/zh-cn.js"></script>
+
+<script type="text/javascript" src="__laydate__/laydate.js"></script>
+<script type="text/javascript" src="__JS__/jquery.form.js"></script>
+<script type="text/javascript" src="__layer__/layer.js"></script>
+
+<script type="text/javascript">
+    var ue = UE.getEditor('ueditor');
+   laydate.render({
+    elem:"#time",
+    type:'datetime'
+    });
+   $('form').submit(function (){
+    $(this).ajaxSubmit({
+         url:"{:U('edit')}",
+         type:'post',
+         datatype:'json',
+         success:function (msg){
+            if(msg.status==1){
+                layer.msg(msg.msg);
+                location.href="/admin/say/";
+            }else{
+                layer.msg(msg.msg);
+            }
+         }
+        });
+        return false;
+    });
+
+    </script>
+</body>
+</html>

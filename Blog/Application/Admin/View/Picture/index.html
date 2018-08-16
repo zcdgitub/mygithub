@@ -1,0 +1,91 @@
+<include file="Public:header"/>	
+<include file="Public:sidebar"/>	
+		
+		<div id="content">
+			<div id="content-header">
+				<h1>图片列表</h1>
+				<div class="btn-group">
+					<a href="{:U('Admin/Picture/index')}" class="btn" title="新增图片"><i class="fa fa-file"></i></a>
+					<a class="btn" title="相册评论"><i class="fa fa-comment"></i></a>
+				</div>
+			</div>
+			<div id="breadcrumb">
+				<a href="#" title="回到首页" class="tip-bottom"><i class="fa fa-home"></i> 首页</a>
+				<a href="#">图片管理</a>
+				<a href="#" class="current">图片列表</a>
+			</div>
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="widget-box">
+							<div class="widget-title">
+								<span class="icon">
+									<i class="fa fa-picture-o"></i>
+								</span>
+								<h5>图片列表</h5>
+							</div>
+							<div class="widget-content">
+								<div class="gallery-masonry">
+								<volist name="data" id="vo">
+                                    <div class="item"  data-img-id="{$vo.p_id}" title="{$vo.p_remark}">
+										<a href="#" class="thumbnail">
+											<img src="/{$vo.p_thumb}"  />	</a>
+										<div class="actions">
+											<div class="actions-inner">
+												<a  href="{:U('edit','id='.$vo['p_id'])}" class="tip-top"><i class="fa fa-pencil"></i></a>
+												<a  class="tip-top del" ><i class="fa fa-trash-o" ></i></a>
+											</div>
+										</div>
+								    </div>
+								  </volist> 
+                                </div>
+							</div>
+						</div>
+                        
+					</div>
+				</div>
+		</div>
+<include file="Public:footer"/> 
+<script src="__JS__/jquery.masonry.min.js"></script>
+<script type="text/javascript" src="__layer__/layer.js"></script> 
+<script>
+      $('.gallery-masonry').masonry({
+                      itemSelector: '.item',
+                      isAnimated: true,
+                      isFitWidth: true
+                    });
+
+		$('.item').hover(function (){
+
+
+
+
+
+
+		});
+
+
+  $('.del').click(function (){
+ 	var hang=$(this).parent().parent().parent();
+ 	var dele_id=hang.attr('data-img-id');
+		$.ajax({
+			 url:"{:U('delete')}",
+			 type:'post',
+			 datatype:'json',
+            data:{dele_id:dele_id},
+    		success:function (msg){
+    			if(msg.status==1){
+    				layer.msg(msg.msg);
+    				hang.remove();
+    			}else{
+    				layer.msg(msg.msg);	
+    			}
+    		}
+		});
+
+
+
+  });
+              
+            </script>
+	</body>
+</html>

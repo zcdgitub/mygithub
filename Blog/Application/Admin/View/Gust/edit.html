@@ -1,0 +1,177 @@
+<include file="Public:header"/>
+<include file="Public:sidebar"/> 
+<style type="text/css">
+	.qqFace { margin-top: 4px; background: #fff; padding: 2px; border: 1px #dfe6f6 solid; }
+      .qqFace table td { padding: 0px; }
+      .qqFace table td img { cursor: pointer; border: 1px #fff solid; }
+      .qqFace table td img:hover { border: 1px #0066cc solid; }
+
+
+
+</style>	 	
+<div id="content">
+	<div id="content-header">
+		<h1>评论回复</h1>
+		<div class="btn-group">
+			<a href="{:U('Admin/Gust/gustList')}" class="btn btn-large" title="文章评论列表"><i class="fa fa-tasks"></i></a>
+		</div>
+	</div>
+	<div id="breadcrumb">
+		<a href="index.html" title="回到首页" class="tip-bottom"><i class="fa fa-home"></i> 首页</a>
+		<a href="#">互动管理</a>
+		<a href="#" class="current">评论回复</a>
+	</div>
+	<div class="container-fluid">
+	<div class="row">
+		<div class="col-xs-12">
+			<!-- <div class="alert alert-info">
+				<i class="fa fa-code"></i>使用邮件回复的时候，请耐心等待，谢谢!
+				<a href="#" data-dismiss="alert" class="close">×</a>
+			</div> -->
+			<div class="widget-box">
+				<div class="widget-title">
+					<span class="icon">
+						<i class="fa fa-comment"></i>									
+					</span>
+					<h5>评论回复</h5>
+				</div>
+				<div class="widget-content nopadding">
+				<form  class="form-horizontal" action="" method="post">							
+						<div class="form-group">
+                            <label class="col-sm-3 col-md-3 col-lg-1 control-label">留言编号</label>
+                            <div class=" col-sm-9 col-md-9 col-lg-10">
+                            	<div class="input-group input-group-sm">
+									<span class="input-group-addon"><i class="fa fa-laptop"></i></span>
+                                	<input type="text" value="{$data.g_id}" class="form-control input-sm" id="g_id"name="g_id"  readonly/>
+                                </div>
+                            </div>
+                        </div>
+						
+						<div class="form-group">
+                            <label class="col-sm-3 col-md-3 col-lg-1 control-label">用户名</label>
+                            <div class=" col-sm-9 col-md-9 col-lg-10">
+                            	<div class="input-group input-group-sm">
+									<span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                	<input type="text" value="{$data.g_name}" class="form-control input-sm" id="g_name" />
+                                </div>
+                            </div>
+                        </div>
+						
+						<div class="form-group">
+							<label class="col-sm-3 col-md-3 col-lg-1 control-label">评论预览</label>
+							<div class="col-sm-9 col-md-9 col-lg-10">
+								<div style="border: 1px solid red;min-height:100px;padding: 5px;">{$data.g_content|reFace}</div>
+							</div>
+						</div>
+						
+						<div class="form-group">
+							<label class="col-sm-3 col-md-3 col-lg-1 control-label">评论内容</label>
+							<div class="col-sm-9 col-md-9 col-lg-10">
+								<textarea rows="5" class="form-control" id="g_content" >{$data.g_content|reFace}</textarea>
+							</div>
+						</div>
+						
+						<div class="form-group">
+                            <label class="col-sm-3 col-md-3 col-lg-1 control-label">评论时间</label>
+                            <div class=" col-sm-9 col-md-9 col-lg-10">
+                            	<div class="input-group input-group-sm">
+									<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                	<input type="text" value="{$data.g_time|date="Y-m-d H:i:s",###}" class="form-control input-sm"  id="g_time" readonly=""/>
+                                </div>
+                            </div>
+                        </div>
+                        
+					<!-- 	<div class="form-group">
+					                            <label class="col-sm-3 col-md-3 col-lg-1 control-label">IP</label>
+					                            <div class=" col-sm-9 col-md-9 col-lg-5">
+					                            	<div class="input-group input-group-sm">
+								<span class="input-group-addon"><i class="fa fa-globe"></i></span>
+					                                	<input type="text" value="{$info.g_ip}" class="form-control input-sm" id="g_ip" readonly=""/>
+					                                </div>
+					                            </div>
+					                            <div class=" col-sm-9 col-md-9 col-lg-5">
+					                            	<div class="input-group input-group-sm">
+								<span class="input-group-addon"><i class="fa fa-globe"></i></span>
+					                                	<input type="text" value="{$info.g_ip|getIp}" class="form-control input-sm" readonly=""/>
+					                                </div>
+					                            </div>
+					                        </div>
+					                         -->
+                       <!--  <div class="form-group">
+                           <label class="col-sm-3 col-md-3 col-lg-1 control-label">评论邮箱</label>
+                           <div class=" col-sm-9 col-md-9 col-lg-10">
+                           	<div class="input-group input-group-sm">
+                       									<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                               	<input type="text" value="{$info.g_email}" class="form-control input-sm" id="g_email"/>
+                               </div>
+                           </div>
+                       </div> -->
+                        
+                        <div class="form-group">
+                            <label class="col-sm-3 col-md-3 col-lg-1 control-label">回复人</label>
+                            <div class=" col-sm-9 col-md-9 col-lg-10">
+                            	<div class="input-group input-group-sm">
+									<span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                	<input type="text" value="{$data.g_rname}" class="form-control input-sm" id="g_rname"  name="g_rname"/>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+							<label class="col-sm-3 col-md-3 col-lg-1 control-label">回复内容</label>
+							<div class="col-sm-9 col-md-9 col-lg-10">
+								<!-- <a href="javascript:void(0);" id="rl_exp_btn" class="hidden-xs"><span class="emotion hidden-xs">表情</span>  </a> -->
+								 <a href="javascript:void(0);"><span class="emotion">表情</span></a>
+								<textarea rows="5" class="form-control" id="content-text" name="g_rcontent">{$data.g_rcontent|reFace}</textarea>
+							</div>
+						</div>
+						<!-- <div class="form-group">
+							<label class="col-sm-3 col-md-3 col-lg-1 control-label">邮件</label>
+							<div class="col-sm-9 col-md-9 col-lg-10">
+								<label><input type="radio" name="send" checked value="1"/> Yes</label>
+								<label><input type="radio" name="send" value="0"/> No</label>
+							</div>
+						</div> -->
+						<div class="form-actions">
+							 <input type="submit" class="btn btn-success btn-sm"  value="确认回复">&nbsp;&nbsp;   
+							<button type="button" class="btn btn-danger btn-sm">取消</button>
+						</div>
+							<input type="hidden" name="g_id" value="{$data.g_id}">
+					</form>
+				</div>
+			</div>						
+		</div>
+	</div>
+	</div>
+</div>
+<include file="Public:footer"/>
+<script src="/Public/Js/rl_exp.js"></script>
+<script type="text/javascript" src="__layer__/layer.js"></script>
+<script type="text/javascript" src="__JS__/jquery.form.js"></script>
+<script>
+	$('.emotion').qqFace({
+	    id: 'facebox',
+	   assign:'content-text',
+	   path:'__Arclist__/'
+	});
+
+
+	$('form').submit(function (){
+		$(this).ajaxSubmit({
+			url:"{:U('edit')}",
+			type:'post',
+			datatype:'json',
+			success:function (msg){
+				if(msg.status==1){
+					layer.msg(msg.msg);
+				location.href="{:U('index')}";
+				}else{
+					layer.msg(msg.msg);
+				}
+			}
+		});
+return false;
+});
+</script>
+</body>
+</html>

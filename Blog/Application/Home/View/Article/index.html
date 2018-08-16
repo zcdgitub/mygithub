@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <title>{$info.a_title} - {$Think.config.NAME}</title>
+    <meta name="keywords" content="{$info.a_keyword}" />
+    <meta name="description" content="{$info.a_remark}" />
+	<meta name="version" content="{$Think.config.NAME} v{$version}" />
+	<meta name="author" content="{$system.author}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="__CSS__/shCore.min.css" />
+    <style type="text/css">
+      .qqFace { margin-top: 4px; background: #fff; padding: 2px; border: 1px #dfe6f6 solid; }
+      .qqFace table td { padding: 0px; }
+      .qqFace table td img { cursor: pointer; border: 1px #fff solid; }
+      .qqFace table td img:hover { border: 1px #0066cc solid; }
+
+    </style>
+   
+	<script src="__JS__/shCore.min.js" ></script>
+	<script type="text/javascript">
+		SyntaxHighlighter.config.clipboardSwf = '__IMG__/clipboard.swf';
+		SyntaxHighlighter.all();
+	</script>
+    <include file="Public:nav"/>
+    <div class="row aerousel">
+        <ol class="breadcrumb">
+            <li><a href="{:U('index/index')}">网站首页</a></li>
+            <li class="active">学海无涯&nbsp;|&nbsp;{$info.t_name}</li>
+        </ol>
+        <div class="col-md-8 row-l articles">
+		<h5>
+			<eq name="data.a_original" value="1">
+				<span class="original">【原创】</span>
+			<else />
+				<span class="reprint">【转载】</span>
+			</eq>
+			<a href="">{$data.a_title}</a>
+		</h5>
+           	<div class="a-write">栏目：{$data.t_name}&nbsp;&nbsp;作者：{$data.a_author}&nbsp;&nbsp;阅读：（{$data.a_hit}）<span class="hidden-xs">更新于：{$data.a_time|getTime}</span></div>
+            <div class="a-content">{$data.a_content|htmlspecialchars_decode}</div>
+            <div class="article-copy hidden-xs">
+                <eq name="data.a_original" value="1">
+                	<p>非特殊说明，本文版权归{$data.a_author}所有，转载请注明出处.</p>
+                	<p>本文标题：{$data.a_title}</p>
+                <!--     <p>本文网址：<a>{$Think.config.SITE_URL}.com/article-{$info.a_id}.html</a>.</p> -->
+                	<p>本文标签：<a>{$data.a_keyword}</a></p>
+                <else/>
+                	<p>本文系{$info.a_author}创作，可自由转载、引用，但需署名作者且注明文章出处..</p>
+                	<p>本文标题：{$info.a_title}</p>
+                	<p>原文网址：<a>功能暂未开放</a>.</p>
+                	<p>本文标签：<a>{$info.a_keyword}</a></p>
+                	发表自：&nbsp;{$info.a_from}&nbsp;&nbsp;位于：{$info.a_ip|getIp}&nbsp;&nbsp;评论：&nbsp;{$common|count}&nbsp;&nbsp;关键词：&nbsp;{$info['a_keyword']?$info['a_keyword']:'暂无标签'}&nbsp;&nbsp;
+            	</eq>
+            </div>
+            <hr />
+                   
+
+                <div class="a-up"><p>上一篇：<empty name="prev.a_id">&nbsp;没有了<else /><a title='{$prev.a_title}' href="{:U('/article/index','id='.$prev['a_id'])}">&nbsp;{$prev.a_title|msubstr=0,40,'utf-8',ture}</a></empty></p></div>
+                 <div class="a-down"><p>下一篇：<empty name="next.a_id">&nbsp;没有了<else /><a title='{$next.a_title}' href="{:U('/article/index','id='.$next['a_id'])}">&nbsp;{$next.a_title|msubstr=0,40,'utf-8',ture}</a></empty></p></div>
+
+           
+           <div class="bshare-custom"> 
+           <span class="">分享到:</span>
+                    <div class="bsPromo bsPromo2"></div>
+                    <a title="分享到QQ空间" class="bshare-qzone"></a><a title="分享到微信" class="bshare-weixin" href="javascript:void(0);"></a><a title="分享到新浪微博" class="bshare-sinaminiblog"></a><a title="分享到豆瓣" class="bshare-douban" href="javascript:void(0);"></a><a title="分享到人人网" class="bshare-renren"></a><a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a>
+                </div>
+                <script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=&amp;pophcol=2&amp;lang=zh"></script>
+                <script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>
+            <hr />  
+
+        <volist name="article_c" id="vo">
+        
+            <div class="media connect" style="padding-left:{$vo['lev']+1}cm">
+                <div class="media-left">
+    	             
+    	              <!--   <img src="{$vo.ac_img}" class="media-object img-circle img-50" alt="{$vo.ac_name}"/> -->
+    	               <img src="{$vo.ac_img}" class="media-object img-circle img-50" alt="{$vo.ac_name}"/>
+                   
+                </div>
+                <div class="media-body">
+                   <!--  <div class="fool">#{$count}楼</div> -->
+                    <div class="media-heading">
+                            <a>
+                                <span class="glyphicon glyphicon-user" >{$vo.ac_name} </span> 
+                            </a>                     
+                             <div class="connect-box"><span >{$vo.ac_content|reFace}</span></div>
+                    </div>
+                      
+                    <div class="date-dz">
+                        <a ><span class=" glyphicon glyphicon-time">{$vo.ac_time|date="Y-m-d H:i:s",###}</span></a>
+
+                        <div class="date-dz-right pull-right comment-pl-block">
+                            <a href="javascript:;" class="date-dz-pl hf-con-block hf" id="{$vo.ac_id}" >回复</a>
+                            <span class=" date-dz-line"></span>
+                         
+                        </div>
+                    </div>
+                    <div id="dongtai"></div>
+                    
+
+                </div> 
+            </div>
+            </volist>
+            <hr />
+
+
+
+
+            <div class="home-from">
+                <div class="home-from-model" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">留下脚印</div>
+                <div class="collapse" id="collapseExample">
+                    <div class="well">
+                                                                                
+                            <include file="Public:form"/>                   
+                            <div class="form-group home-from-box">
+                                <p> 
+                                     <span class="emotion">表情</span>
+                                    <button class="btn btn-default btn-add" style="float: right;">提交</button> 
+                                </p>
+                            </div>
+                        
+                    </div>
+                </div>
+            </div> 
+            
+        </div>
+    <include file="Public:sidebar"/>
+    <include file="Public:footer"/>
+    <script type="text/javascript" src="__layer__/layer.js"></script>
+
+<script type="text/javascript">
+    $('.emotion').qqFace({
+    id: 'facebox',
+   assign:'content',
+   path:'__Arclist__/'
+});
+
+
+$('.btn').click(function (){
+   var name=$(this).parent().parent().siblings().find('#name').val();
+ /*  var name=$('#name').val();*/
+
+   var content=$(this).parent().parent().siblings().find('#content').val();
+   var pid=$(this).parent().parent().siblings().find('#pid').val();
+   var aid=$(this).parent().parent().siblings().find('#aid').val();
+   
+   /* console.log(content);*/
+   /* console.log(aid);*/
+
+    $.ajax({
+        url:"{:U('index')}",
+        type:'post',
+        datatype:'json',
+        data:{
+            name:name,
+            content:content,
+            pid:pid,
+            aid:aid
+            },
+        success:function (msg){
+          if(msg.status==1){
+            layer.msg(msg.msg);
+           /* location.href="{:U('index')}";*/
+          }else{
+            layer.msg(msg.msg);
+          }
+        }
+
+    });
+});
+
+ $(".hf").click(function (){
+   
+        if($(this).parent().parent().next().children().hasClass('well')){
+                $(this).parent().parent().next().children('.well').remove();
+        }else{
+           /* var id=$(this).attr('id');//子评论id值
+                console.log(id);*/
+
+            var name2=$(this).parent().parent().siblings('.media-heading').find('a').find('span').html(); 
+
+            var huifu='@'+name2+':';
+             /*   console.log(huifu);*/
+              var fhHtml = '<div class="well">'+
+              '<div class="input-group home-from-box">'+
+                    '<span class="input-group-addon" id="basic-addon1">昵称</span>'+
+                    '<input type="text" class="form-control name" placeholder="昵称" aria-describedby="basic-addon1" name="g_name"  id="name">'+
+                    '<input type="hidden" name="p_id" value="{$vo.ac_id}" id="pid"/>'+
+                    '<input type="hidden"  name="ac_pid"    value="{$data.a_id}"  id="aid" />'+
+                    '<span class="glyphicon glyphicon-remove form-control-feedback hidden" aria-hidden="true"></span>'+
+                '</div>'+
+                '<div class="form-group home-from-box text">'+
+
+                    '<textarea class="form-control" id="content" name="g_content" rows="3"  rows="7" value="{$vo.ac_name}"></textarea>'+
+                '</div>'+
+                    '<div class="form-group home-from-box">'+
+                        '<p>'+
+                        '<span class="emotion1">表情</span>'+
+                        '<button class="btn btn-default btn-add" style="float: right;">提交</button>'+
+                        '</p>'+
+                    '</div>'+
+        '</div>';
+          $(this).parent().parent().next('#dongtai').append(fhHtml);
+              $(this).parent().parent().next('#dongtai').find('.well').find('.text').find('.form-control').val(huifu);
+              $('.emotion1').qqFace({
+                    id: 'facebox',
+                   assign:'content',
+                   path:'__Arclist__/'
+            });
+    
+        }  
+
+        $('.btn').click(function (){
+            
+            var name1=$(this).parent().parent().siblings().find('#name').val();//评论人
+            //var name2=$(this).parent().parent().parent().parent().siblings('.media-heading').find('a').find('span').html(); //
+           /* console.log(name1);*/
+            var content=name1+$(this).parent().parent().siblings().find('#content').val();
+           /* console.log(content);*/
+            var pid=$(this).parent().parent().parent().parent().siblings('.date-dz').find('.date-dz-right').find('a').attr('id');
+    
+           
+           /* $(this).parent().parent().siblings().find('#pid').val(pid);*/
+            var aid=$(this).parent().parent().siblings().find('#aid').val();
+
+              $.ajax({
+                url:"{:U('index')}",
+                type:'post',
+                datatype:'json',
+                data:{
+                     name:name1,
+                    content:content,
+                    pid:pid,
+                    aid:aid
+                },
+                success:function (msg){
+                    if(msg.status==1){
+                        layer.msg(msg.msg);
+          
+                    }else{
+                        layer.msg(msg.msg);
+                    }
+                }
+
+
+
+
+              });
+
+
+
+        });
+
+
+
+
+    });
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+

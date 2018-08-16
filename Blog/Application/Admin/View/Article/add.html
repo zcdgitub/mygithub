@@ -1,0 +1,192 @@
+<include file="Public:header"/>			
+<include file="Public:sidebar"/>			
+<div id="content">
+	<div id="breadcrumb">
+		<a href="index.html" title="Go to Home" class="tip-bottom"><i class="fa fa-home"></i> 首页</a>
+		<a href="#">发布内容</a>
+		<a href="#" class="current">发表文章</a>
+	</div>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="widget-box">
+					<div class="widget-title">
+						<span class="icon">
+							<i class="fa fa-flask"></i>							
+						</span>		
+						<h5>发表文章</h5>			
+					</div>
+					<div class="widget-content nopadding">
+						<form enctype="multipart/form-data"  action=""   method="post" class="form-horizontal" >
+							<div class="form-group">
+								<label class="col-sm-3 col-md-3 col-lg-1 control-label">文章标题</label>
+								<div class="col-sm-9 col-md-9 col-lg-10">
+									<input type="text" class="form-control input-sm" name="a_title" value=""/>
+								</div>
+							</div>
+							
+							<div class="form-group">
+								<label class="col-sm-3 col-md-3 col-lg-1 control-label">栏目</label>
+								<div class="col-sm-9 col-md-9 col-lg-10">
+									<select name="tag_id">
+										<option value="0">顶级分类</option>
+										<volist name="data" id="vo">
+											<option value="{$vo.t_id}">{$vo.lev|str_repeat="-",###}{$vo.t_name}</option>
+										</volist>
+									</select>
+								</div>
+							</div> 
+							
+							<div class="form-group">
+								<label for="" class="col-sm-3 col-md-3 col-lg-1 control-label">关键词</label>
+								<div class="col-sm-9 col-md-9 col-lg-10">
+									<div class="input-group input-group-sm">
+										<span class="input-group-addon"><i class="fa fa-quote-left"></i></span>
+										<input type='text' class="form-control input-sm" placeholder="一个关键词" name="a_keyword" value=""/>
+										<span class="input-group-addon"><i class="fa fa-quote-right"></i></span>
+									</div>
+								</div>											
+							</div>
+							
+						
+
+             <div class="form-group">
+				<label class="col-sm-3 col-md-3 col-lg-1 control-label">文章图片</label>
+				<div class="col-sm-9 col-md-9 col-lg-10">
+						<div class="imageBox">
+							<div class="thumbBox"></div>
+							<div class="spinner" style="display: none">Loading...</div>
+						</div>
+																		             
+						<input type="file" name="a_img" />
+						<br/>
+			</div>  
+                            
+							
+							<div class="form-group">
+								<label class="col-sm-3 col-md-3 col-lg-1 control-label">描述</label>
+								<div class="col-sm-9 col-md-9 col-lg-10">
+									<textarea rows="3" class="form-control" name="a_remark"></textarea>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label class="col-sm-3 col-md-3 col-lg-1 control-label">文章内容</label>
+								<div class="col-sm-9 col-md-9 col-lg-10">
+									 <script id="ueditor" name="a_content" type="text/plain" style="width: 800px;height: 500px;"></script> 
+									  
+								</div>
+							</div>
+							
+							<div class="form-group">
+                                <label class="col-sm-3 col-md-3 col-lg-1 control-label">发表时间</label>
+                                <div class=" col-sm-9 col-md-9 col-lg-10">
+                                	<div class="input-group input-group-sm">
+										<span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                    	<input type="text" value="" class="form-control input-sm" name="a_time" id="time" />
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+								<label class="col-sm-3 col-md-3 col-lg-1 control-label">显示</label>
+								<div class="col-sm-9 col-md-9 col-lg-10">
+									<label><input type="radio" name="a_view" value="0" > Not show</label>
+									<label><input type="radio" name="a_view" value="1"  /> Show</label>
+									<label><input type="radio" name="a_view" value="2"  /> Hot</label>
+								</div>
+							</div>
+							
+							<div class="form-group">
+								<label class="col-sm-3 col-md-3 col-lg-1 control-label">原创</label>
+								<div class="col-sm-9 col-md-9 col-lg-10">
+									<label><input type="radio" name="a_original" value="1" /> Yes</label>
+									<label><input type="radio" name="a_original" value="0"  /> No</label>
+								</div>
+							</div>
+							<div class="form-group">
+                                <label class="col-sm-3 col-md-3 col-lg-1 control-label">发表人</label>
+                                <div class=" col-sm-9 col-md-9 col-lg-10">
+                                	<div class="input-group input-group-sm">
+										<span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                    	<input type="text" value=""  class="form-control input-sm" name="a_author" />
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="col-sm-3 col-md-3 col-lg-1 control-label">点击量</label>
+                                <div class=" col-sm-9 col-md-9 col-lg-10">
+                                	<div class="input-group input-group-sm">
+										<span class="input-group-addon"><i class="fa fa-fire"></i></span>
+                                    	<input type="text" value="{$Think.config.HIT}" class="form-control input-sm" name="a_hit"/>
+                                    </div>
+                                </div>
+                            </div>
+							 <div class="form-group">
+                                <label class="col-sm-3 col-md-3 col-lg-1 control-label">发表自</label>
+                                <div class=" col-sm-9 col-md-9 col-lg-10">
+                                    <div class="input-group input-group-sm">
+                                        <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                        <input type="text" value="{:getOs()}" class="form-control input-sm" id="from"  name="a_from" />
+                                    </div>
+                                </div>
+                            </div>
+ 							<div class="form-group">
+                                <label class="col-sm-3 col-md-3 col-lg-1 control-label">发表IP</label>
+                                <div class=" col-sm-9 col-md-9 col-lg-10">
+                                    <div class="input-group input-group-sm">
+                                        <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                        <input type="text" value="{:get_client_ip()}" class="form-control input-sm" id="ip" name="a_ip" />
+                                    </div>
+                                </div>
+                            </div>
+							
+							<div class="form-actions">
+								 <input type="submit" class="btn btn-success btn-sm" id="addsay" value="存入数据库"> 			
+								<button type="button" class="btn btn-danger btn-sm">取消</button>
+							</div>
+						</form>
+					</div>
+				</div>						
+			</div>
+		</div>
+	</div>
+</div>
+<include file="Public:footer"/>
+<script src="__UE__/ueditor.config.js"></script>
+<script src="__UE__/ueditor.all.min.js"></script>
+<script type="text/javascript" src="__UE__/lang/zh-cn/zh-cn.js"></script>
+
+<script type="text/javascript" src="__laydate__/laydate.js"></script>
+<script type="text/javascript" src="__JS__/jquery.form.js"></script>
+<script type="text/javascript" src="__layer__/layer.js"></script>
+
+<script>
+var ue=UE.getEditor('ueditor');
+	laydate.render({
+		elem:'#time',
+		type:'datetime'
+	});
+$('form').submit(function (){
+		$(this).ajaxSubmit({
+			url:"{:U('add')}",
+			type:'post',
+			datatype:'json',
+		
+			success:function (msg){
+				if(msg.status==1){
+					layer.msg(msg.msg);
+					location.href="{:U('index')}";
+				}else{
+					layer.msg(msg.msg);
+				}
+			}
+		});
+return false;
+});
+ 
+
+</script>
+</body>
+</html>
