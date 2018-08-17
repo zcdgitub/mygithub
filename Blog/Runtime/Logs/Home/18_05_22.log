@@ -1,6 +1,0 @@
-[ 2018-05-22T22:07:18+08:00 ] 127.0.0.1 /favicon.ico
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-NOTIC: [2] preg_match(): No ending delimiter '/' found D:\phpStudy\WWW\Blog\ThinkPHP\Library\Think\Route.class.php 第 58 行.
-
